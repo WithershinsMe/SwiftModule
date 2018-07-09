@@ -1,0 +1,57 @@
+# Uncomment the next line to define a global platform for your project
+
+# sources
+source 'https://github.com/CocoaPods/Specs.git'
+
+# global config
+platform :ios, '9.0'
+use_frameworks!
+workspace 'DDDemo'
+
+def podspecName(name="")
+@pname=name
+@pname="#{@pname}/Framework"
+return @pname
+end
+
+def networkAndParsingPods
+  pod 'AFNetworking', '~> 3.0'
+end
+
+target 'DDDemo' do
+  project 'DDDDemo/DDDemo'
+  use_frameworks!
+
+  networkAndParsingPods
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+  # Pods for DDDemo
+
+  target 'DDDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DDDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+
+target 'Profile' do
+   project 'Profile/Profile'
+
+   target 'ProfileTests' do
+   end
+end
+
+target 'Common' do
+  project 'Common/Common'
+  networkAndParsingPods
+
+  target 'CommonTests' do
+  end
+end
+
