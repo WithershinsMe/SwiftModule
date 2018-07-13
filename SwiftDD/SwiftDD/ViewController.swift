@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         let vc = Profile.getProfileViewController()
         self.addChildViewController(vc)
         self.view.addSubview(vc.view)

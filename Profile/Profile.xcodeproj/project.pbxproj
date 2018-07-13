@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473BB68020F6FCAA00C6DAA2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473BB67F20F6FCAA00C6DAA2 /* Profile.swift */; };
 		475E2DD020F2F148002F34DE /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E2DCF20F2F148002F34DE /* ProfileTests.swift */; };
 		475E2DD220F2F148002F34DE /* Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 475E2DC420F2F148002F34DE /* Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		475E2E0E20F30486002F34DE /* ConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E2E0D20F30486002F34DE /* ConfigType.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		473BB67F20F6FCAA00C6DAA2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		475E2DC120F2F148002F34DE /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475E2DC420F2F148002F34DE /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		475E2DC520F2F148002F34DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				475E2DC520F2F148002F34DE /* Info.plist */,
 				475E2E0F20F3089A002F34DE /* ProfileViewController.swift */,
 				475E2E1120F308F2002F34DE /* ProfileInterface.swift */,
+				473BB67F20F6FCAA00C6DAA2 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475E2E1220F308F2002F34DE /* ProfileInterface.swift in Sources */,
+				473BB68020F6FCAA00C6DAA2 /* Profile.swift in Sources */,
 				475E2E1020F3089A002F34DE /* ProfileViewController.swift in Sources */,
 				475E2E0E20F30486002F34DE /* ConfigType.swift in Sources */,
 			);

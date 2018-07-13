@@ -19,6 +19,7 @@
 		475E2DE020F2F31A002F34DE /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475E2DDF20F2F31A002F34DE /* Common.framework */; };
 		475E2DE120F2F31A002F34DE /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475E2DDF20F2F31A002F34DE /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		475E2E1420F3095F002F34DE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E2E1320F3095F002F34DE /* Config.swift */; };
+		475E2E7020F45ECE002F34DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 475E2E6F20F45ECE002F34DE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		473BB68120F73ABA00C6DAA2 /* APP启动参数设定.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "APP启动参数设定.md"; sourceTree = "<group>"; };
+		473BB68220F87FF500C6DAA2 /* 代码只在Debug下引入或生效.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "代码只在Debug下引入或生效.md"; sourceTree = "<group>"; };
 		475E2D6220F2EF36002F34DE /* SwiftDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475E2D6520F2EF36002F34DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475E2D6720F2EF36002F34DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		475E2DDB20F2F315002F34DE /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475E2DDF20F2F31A002F34DE /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475E2E1320F3095F002F34DE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		475E2E6F20F45ECE002F34DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		473BB68320F8821000C6DAA2 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				473BB68220F87FF500C6DAA2 /* 代码只在Debug下引入或生效.md */,
+				475E2E6F20F45ECE002F34DE /* README.md */,
+				473BB68120F73ABA00C6DAA2 /* APP启动参数设定.md */,
+			);
+			name = Tips;
+			sourceTree = "<group>";
+		};
 		475E2D5920F2EF36002F34DE = {
 			isa = PBXGroup;
 			children = (
+				473BB68320F8821000C6DAA2 /* Tips */,
 				475E2DE220F2F32C002F34DE /* Framework */,
 				475E2D6420F2EF36002F34DE /* SwiftDD */,
 				475E2D7920F2EF37002F34DE /* SwiftDDTests */,
@@ -268,6 +283,7 @@
 			files = (
 				475E2D7020F2EF37002F34DE /* LaunchScreen.storyboard in Resources */,
 				475E2D6D20F2EF37002F34DE /* Assets.xcassets in Resources */,
+				475E2E7020F45ECE002F34DE /* README.md in Resources */,
 				475E2D6B20F2EF36002F34DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
