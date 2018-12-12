@@ -11,6 +11,8 @@
 		475E2DAC20F2F11F002F34DE /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E2DAB20F2F11F002F34DE /* CommonTests.swift */; };
 		475E2DAE20F2F11F002F34DE /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 475E2DA020F2F11F002F34DE /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		475E2E2620F31345002F34DE /* TestHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475E2E2520F31345002F34DE /* TestHelpers.framework */; };
+		47A23306210ACDFD0018539F /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A23305210ACDFD0018539F /* NotificationExtension.swift */; };
+		47A23308210ACF0E0018539F /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A23307210ACF0E0018539F /* NotificationToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		475E2DAB20F2F11F002F34DE /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		475E2DAD20F2F11F002F34DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475E2E2520F31345002F34DE /* TestHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A23305210ACDFD0018539F /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		47A23307210ACF0E0018539F /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				475E2DA020F2F11F002F34DE /* Common.h */,
 				475E2DA120F2F11F002F34DE /* Info.plist */,
+				47A23305210ACDFD0018539F /* NotificationExtension.swift */,
+				47A23307210ACF0E0018539F /* NotificationToken.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				TargetAttributes = {
 					475E2D9C20F2F11F002F34DE = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0940;
 					};
 					475E2DA520F2F11F002F34DE = {
 						CreatedOnToolsVersion = 9.3;
@@ -206,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A23308210ACF0E0018539F /* NotificationToken.swift in Sources */,
+				47A23306210ACDFD0018539F /* NotificationExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +360,7 @@
 		475E2DB220F2F11F002F34DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -369,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gk.example.Common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +388,7 @@
 		475E2DB320F2F11F002F34DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -403,6 +415,7 @@
 		475E2DB520F2F11F002F34DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = CommonTests/Info.plist;
@@ -421,6 +434,7 @@
 		475E2DB620F2F11F002F34DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = CommonTests/Info.plist;
